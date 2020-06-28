@@ -1,5 +1,6 @@
 var db = require('../db');
 var shortid = require('shortid');
+var validate = require('../validate/user.validate');
 
 module.exports.index= function(req, res){
 	res.render('users/index', {
